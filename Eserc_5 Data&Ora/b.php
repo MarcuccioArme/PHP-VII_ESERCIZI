@@ -59,6 +59,6 @@
 
     }
 
-?>
+    // strtotime() ottiene il valore UNIX dei secondi delle date;
 
-// strtotime() ottiene il valore UNIX dei secondi delle date;
+?>
