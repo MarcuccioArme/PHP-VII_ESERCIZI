@@ -51,7 +51,7 @@
         $dataDiNascita = date('d-m-Y', strtotime("$giorno-$mese-$anno"));
         $dataCorrente = date('d-m-Y');
 
-        $giorniTrascorsi = (strtotime($dataCorrente) - strtotime($dataDiNascita)) / (24 * 60 * 60);
+        $giorniTrascorsi = round((strtotime($dataCorrente) - strtotime($dataDiNascita)) / (60 * 60 * 24));
 
         echo "<br>Tra la data di nascita: $dataDiNascita<br>";
         echo "e la data odierna: $dataCorrente<br>";
@@ -60,3 +60,5 @@
     }
 
 ?>
+
+// strtotime() ottiene il valore UNIX dei secondi delle date;
